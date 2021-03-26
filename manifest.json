@@ -1,0 +1,29 @@
+{
+  "name": "Youtube Next Song",
+  "description": "Move to next song on youtube",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "commands": {
+	"play-next-song": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+		"windows": "Ctrl+Shift+K"
+      },
+      "description": "Play next song on Youtube playing list"
+    }
+  },
+  "browser_action": {
+    "default_title": "Play next on Youtube!"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
